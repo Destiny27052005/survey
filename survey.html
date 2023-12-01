@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge"
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="survey.css">
+  <title>Favourland College</title>
+</head>
+  <body>
+    <h1 id="title">Favourland College Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <!-- Create Form-->
+    <form id="survey-form">
+<label id="name-label">Name: <input id="name"   name="enter-your-name"  type="text" required placeholder="Enter your fullname"></input></label>
+<label for="email" id="email-label">Email: <input id="email" name="email" type="email" required placeholder="Email"></input></label>
+<label for="age" id="number-label">Age(optional): <input id="number" type="number" min="6" max="70" required placeholder="Enter your age"></input>
+</label>
+<label for="role" id="label-role">Which option best describes you?</label>
+<select id="dropdown">
+<option value="student">Student</option>
+<option value="teacher">Teacher</option>
+<option value="guardians">Guardians</option>
+</select>
+<label>Would you recommend Favourland College to a friend?</label>
+<!-- Input Type Radio Button-->
+<label for="recommend-1"><input type="radio" id="recommend-1" name="recommended" value="yes">Yes</input>
+</label>
+<label for="recommend-2"><input type="radio" id="recommend-2" name="recommended" value="no">No</input>
+</label>
+<label for="recommend-3"><input type="radio" id="recommend-3" name="recommended" value="maybe">Maybe</input></label>
+<label>What would you like to see inproved</label>
+<small>(Check all that apply)</small>
+<!----Input Your Checkbox-->
+<label for="inp-1"><input type="checkbox" name="inp" value="debate">Debate</input>
+</label>
+<label for="inp-2"><input type="checkbox" name="inp" value="sport">Sport</input>
+</label>
+<label for="inp-3"><input type="checkbox" name="inp" value="practical">Practical</input>
+</label>
+<label for="inp-4"><input type="checkbox" name="inp" value="additional-course">Additional courses</input>
+</label>
+  <!-- multi-line text input control-->
+<label>Any comments or suggestions?</label>
+<textarea id="comment" name="comment" rows="3" cols="25" placeholder="Enter your comment here"></textarea>
+<!-- Multi-line Text Input Control-->
+<button id="submit" type="submit" value="submit">Submit</button>
+</form>
+</body>
+</html>
